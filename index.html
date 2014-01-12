@@ -8,7 +8,7 @@
 
 <!-- Basic Page Needs -->
 <meta charset="utf-8">
-<title>PLANAR | Personal trainer site template</title>
+<title>AWIP</title>
 <meta name="description" content="Only 16$ - PLANAR Personal trainer site template with calories calculators">
 <meta name="author" content="Ansonika">
 
@@ -57,44 +57,7 @@
 
 <body>
 
-   		<header>
-           <div class="container">
-            <div class="row">
-        	<div class="col-md-4 col-xs-3"><h1 id="logo"><a href="index.html" title="Planar - Personal Trainer">Planar - Personal Trainer</a></h1></div>
-            <nav class="col-md-8 col-xs-9">
-            	<ul id="main-nav" class="sf-menu" >
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="#">Training</a>
-                	<ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="training-programs.html">Programs</a></li>
-                  	</ul>
-                </li>
-                <li><a href="#">Calorie calculators</a>
-                <ul>
-                        <li><a href="daily-calorie-calculator.html">Daily calories</a></li>
-                        <li><a href="calories-burned-heart-rate.html">Calories burned by heart rate</a></li>
-                        <li><a href="calories-burned-calculator.html">Calories burned by activites</a></li>
-                        <li><a href="bmi-calculator.html">BMI calculator</a></li>
-                  	</ul>
-                </li>
-                <li><a href="#">Pages</a>
-                	<ul>
-                    	<li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog_post.html">Single post</a></li>
-                        <li><a href="elements.html">Elements</a></li>
-                        <li><a href="img-galleries.html">Images and galleries</a></li>
-                        <li><a href="media.html">Media</a></li>
-                  	</ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Purchase</a></li>
-                </ul>
-            </nav><!-- End Nav -->
-         </div>
-        </div><!-- End container -->
-        </header> <!-- End header -->
+   		<div class="menu"></div>
         
         <div class="container">
             <div class="row">
@@ -241,46 +204,10 @@
                 </div>
                 
             </div><!-- End row -->
-
+			<div class="footer"></div>
         </div><!-- End container -->
         
-        <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Contacts</h5>
-                    <p>
-                        Our mission is to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world. to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world.
-                    </p>
-                    <ul>
-                        <li><i class="icon-user"></i> Personal trainer Name</li>
-                        <li><i class="icon-phone"></i> Telephone: 41.22.319.36.10 </li>
-                        <li><i class="icon-envelope"></i> Email: <a href="#">info@planar.com </a></li>
-                        <li><i class="icon-skype"></i> Skype name: Planar</li>
-                    </ul>
-                    <ul class="social-bookmarks clearfix">
-                        <li class="linkedin"><a href="#">behance</a></li>
-                        <li class="facebook"><a href="#">facebook</a></li>
-                        <li class="googleplus"><a href="#">googleplus</a></li>
-                        <li class="twitter"><a href="#">twitter</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="add_bottom_15">Suggest this site to a friend</h5>
-                    <div id="message-friend"></div>
-                    <form method="post" action="assets/send_to_friend.php" id="contactfriend">
-                        <div class="form-bg-1"><input type="text" id="name_footer" class="form-control" placeholder="Your name*"></div>
-                        <div class="form-bg-2"><input type="text" id="friendname_footer" class="form-control" placeholder="Your friend name*"></div>
-                        <div class="form-bg-1"><input type="email" id="friendemail_footer" class="form-control" placeholder="Your friend email*"></div>
-                        <div class="form-bg-2"><textarea rows="3" id="message_footer" class="form-control" placeholder="Message*"></textarea></div>
-                        <div class="form-bg-1"><input type="text" id="verify_footer" class="form-control" placeholder="Are you human? 3 + 1 ="></div>
-                        <input type="submit" id="submit-friend" value="Submit" class=" button_medium add_top_30">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="copy">© 2013 - All Rights Reserved</div>
-        </footer><!-- End footer -->
+        
  
  <div id="toTop">Back to Top</div>  
  
@@ -296,7 +223,12 @@
   /* ]]> */
 </script> 
 
-
+<script>
+			jQuery(document).ready(function() {
+				$('.menu').load('header.html');
+				$('.footer').load('footer.html');
+			});
+</script>
 <!-- MENU JS -->    
 <script src="js/hoverIntent.js"></script>
 <script src="js/superfish.js"></script>
@@ -315,6 +247,7 @@
 <script  src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.4" type="text/javascript"></script> 
 <script src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5" type="text/javascript"></script> 
 <script src="js/fancy_func.js" type="text/javascript"></script> 
+
 
 
 </body>
