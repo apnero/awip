@@ -56,8 +56,16 @@ ul#main-nav{
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
+	color: #00aeef;
+}
+
+ul.sf-menu li a ul li:hover {
 	color: #fff;
 }
+.sf-menu a:hover {
+	color: #fff;
+}
+
 .sf-menu li {
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
@@ -71,7 +79,12 @@ ul#main-nav{
 }
 .sf-menu ul ul li {
 		background: #6dcff8;
-	
+}
+ul.sf-menu  li ul li a{
+	color:#fff;
+}
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, .sf-menu li:hover a {
+    color:#fff !important;
 }
 .sf-menu li:hover,
 .sf-menu li.sfHover {
@@ -79,9 +92,11 @@ ul#main-nav{
 	/* only transition out, not in */
 	-webkit-transition: none;
 	transition: none;
+	color:#fff;
 }
 .sf-menu li#active {
 		background: #00aeef;
+		color:#fff;
 }
 
 /*** arrows (for all except IE7) **/
