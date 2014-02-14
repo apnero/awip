@@ -802,6 +802,7 @@ transition: all 0.2s ease;
 	height:380px;
 	width:100%;
 	 border: 8px solid #e8e8e8; 
+	 margin-bottom: 50px;
 }
 
 /* forms error messages */
