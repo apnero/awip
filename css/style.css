@@ -1407,4 +1407,12 @@ h1#logo a{
  }
 
 
+/* Tables */
+tbody {
+    color: #c765c7;
+    background-color: #2b142b;
+    border-color: #d6a9d6;
+    border-style: dotted;
 }
+
+

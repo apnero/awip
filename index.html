@@ -65,17 +65,17 @@
             <div class="row">
                 <div class="col-md-12">
                 
-                    <div class="flexslider">
+                    <div class="flexslider" style="margin:0px">
                         <ul class="slides">
                             <li><img src="img/group.jpg" alt="">
                             <p class="flex-caption">I will help you to achieve your goal</p>
                             </li>
                             <li>
-                            <img src="img/slider/slide-3.jpg" alt="">
+                            <img src="img/main2.jpg" alt="">
                             <p class="flex-caption">Lose weight in a short time</p>
                             </li>
                             <li>
-                            <img src="img/slider/slide-5.jpg" alt="">
+                            <img src="img/main3.jpg" alt="">
                             <p class="flex-caption">Proper training will make you feel better</p>
                             </li>
                         </ul>
@@ -83,8 +83,13 @@
                     
                 </div><!-- End row -->
             </div><!-- End col-md-12 -->
-            
-            <div class="row">
+
+            <div class="jumbotron">
+			  <h1 style="color:#000000;text-align: center;">A.W.I.P. Personal Training</h1>
+
+			</div>
+
+<div class="row">
             
                 <div class="col-md-3 col-sm-6">
                  <div class="box_calculator">
@@ -242,8 +247,47 @@
 				
 				
             </div><!-- End row -->
-			<div class="footer"></div>
-        </div><!-- End container -->
+
+	<div class="footer">            
+			
+		<h3 class="title">Fell free to contact me</h3>
+            
+			
+        <div class="row">
+            <div class="col-md-8">
+                             
+                	<div id="message-contact"></div>
+					<form method="post" action="assets/contact.php" id="contactform">
+						<div class="form-bg-1"><input type="text" class="form-control" id="name" placeholder="Your Name"></div>
+                        <div class="form-bg-2"><input type="email" class="form-control"  id="email" placeholder="Your Email"></div>
+                        <div class="form-bg-1"><input type="text" class="form-control"  id="phone" placeholder="Your Phone number"></div>
+              
+						<div class="form-bg-2"><textarea rows="5" id="message_contact" class=" form-control" placeholder="Your Message"></textarea></div>
+    
+						<input type="submit" id="submit-contact" value="Submit" class=" button_medium add_top_30">
+	
+					</form>
+            
+            </div>
+                
+            <div class="col-md-4">
+                
+                    <h4>Contact info</h4>
+                 <ul>
+                        <li><i class="icon-user"></i> Ron Osborne</li>
+                        <li><i class="icon-user"></i> Bethel, CT</li>
+                        <li><i class="icon-phone"></i> Telephone: 203-326-0464 </li>
+                        <li><i class="icon-envelope"></i> Email: <a href="#">wizozz30@comcast.net </a></li>
+                 </ul>
+                    <ul class="social-bookmarks clearfix">
+                        <li class="facebook"><a href="https://www.facebook.com/AWIPPERSONALTRAINING">facebook</a></li>
+                        <li class="youtube"><a href="http://www.youtube.com/user/wizozz30/">youtube</a></li>
+                    </ul>
+			</div>
+
+        </div><!-- End row -->
+        <div id="copy">© 2014 PlasmaScape Web Design - All Rights Reserved</div>
+    </div><!-- End container -->
         
         
  
@@ -255,7 +299,9 @@
 /* <![CDATA[ */
   $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "fade"
+    animation: "fade",
+	controlNav: false,
+	
   });
 });
   /* ]]> */
@@ -264,7 +310,6 @@
 <script>
 			jQuery(document).ready(function() {
 				$('.menu').load('header.html');
-				$('.footer').load('footer.html');
 			});
 </script>
 <!-- MENU JS -->    
